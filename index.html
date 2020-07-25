@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Homework_5+</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bubbler+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <a href="https://icons8.com/icon/80433/umbrella"
+        >Umbrella icon by Icons8</a
+      >
+
+      <div class="row">
+        <div class="col">
+          <h1 class="cloud"></h1>
+          <p class="stepen">
+            <span class="temp" id="main-temp">21</span>°<sup
+              ><a href="#" class="choice" id="celsius"> C</a
+              ><span class="line"> |</span>
+              <a href="#" class="choice" id="fahren">F</a></sup
+            >
+          </p>
+        </div>
+
+        <div class="col">
+          <h3>
+            <span id="city">Prilep</span>, <span id="date">28 </span
+            ><span id="thisMonth">June</span>
+          </h3>
+          <div class="row">
+            <div class="col" id="dateTime"><h3>Tuesday 21:20h</h3></div>
+          </div>
+          <div class="row">
+            <div class="col" id="description"><h3>Cloudy</h3></div>
+          </div>
+        </div>
+      </div>
+      <div class="suggestion"><em>"Maybe have an umbrella ready!"</em></div>
+      <div class="row">
+        <form id="city-form">
+          <input
+            class="col-4"
+            id="city-input"
+            type="text"
+            autofocus="on"
+            placeholder="Search for a city..."
+          />
+          <input type="submit" value="search" />
+          <button class="col-4" id="current-location">Current location</button>
+        </form>
+      </div>
+
+      <div class="row" id="days">
+        <div class="col">
+          Tomorrow<br /><img src="pics/rain64.png" /><br />22°C
+        </div>
+        <div class="col">
+          Sunday<br /><img src="pics/partCloudy64.png" /><br />27°C
+        </div>
+        <div class="col">
+          Monday<br /><img src="pics/sun64.png" /><br />29°C
+        </div>
+        <div class="col">
+          Tuesday<br /><img src="pics/sun64.png" /><br />31°C
+        </div>
+        <div class="col">
+          Wednesday<br /><img src="pics/partCloudy64.png" /><br />26°C
+        </div>
+      </div>
+      <div class="row">
+        <ul class="extras">
+          <li>Country: <span id="country">0</span></li>
+          <li>Wind: <span id="wind">5</span> km/h</li>
+          <li>Humidity: <span id="humidity">17</span>%</li>
+        </ul>
+        <img class="umbrella" src="pics/bigUmbrella.png" />
+      </div>
+    </div>
+
+    <script src="src/script.js"></script>
+  </body>
+</html>
