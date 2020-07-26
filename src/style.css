@@ -1,15 +1,13 @@
 body {
   margin: 50px;
 }
-a {
-  color: transparent;
-}
+
 .container {
   background-image: url(https://images.pexels.com/photos/66997/pexels-photo-66997.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
   background-size: 540px 575px;
   display: block;
   margin: 0 auto;
-  padding: 10px;
+  padding: 20px;
   color: #fff;
   font-family: "Bubbler One", sans-serif;
   font-weight: 900;
@@ -103,6 +101,7 @@ button {
   border-color: greenyellow;
   border-radius: 4px;
   padding: 5px;
+  margin-bottom: 20px;
 }
 ::placeholder {
   color: #fff;
@@ -139,4 +138,10 @@ img {
   display: block;
   margin-left: auto;
   padding-right: 75px;
+}
+.coder,
+.icons {
+  text-align: center;
+  font-size: 12px;
+  margin: 5px;
 }
